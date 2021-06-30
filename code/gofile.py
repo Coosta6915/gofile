@@ -1,5 +1,4 @@
-# gofile
-# github.com/Codec04
+# gofile.py
 
 import requests
 
@@ -92,9 +91,9 @@ def setFolderOptions(token, folderId, option, value):
     return response_handler(setFolderOptions_response)
 
 
-def deleteFolder(folderId, token):
+def deleteFolder(folderId, token):  # deprecated
     deleteFolder_response = requests.delete(
-        url="https://api.gofile.io/deleteFolder",
+        url="https://api.gofile.io/deleteContent",
         data={
             "folderId": folderId,
             "token": token
@@ -104,9 +103,9 @@ def deleteFolder(folderId, token):
     return response_handler(deleteFolder_response)
 
 
-def deleteFile(fileId, token):
+def deleteFile(fileId, token):  # deprecated
     deleteFile_response = requests.delete(
-        url="https://api.gofile.io/deleteFile",
+        url="https://api.gofile.io/deleteContent",
         data={
             "fileId": fileId,
             "token": token
@@ -114,6 +113,18 @@ def deleteFile(fileId, token):
     ).json()
 
     return response_handler(deleteFile_response)
+
+
+def deleteContent(contentId, token):
+    deleteContent_response = requests.delete(
+        url="https://api.gofile.io/deleteContent",
+        data={
+            "contentId": contentId,
+            "token": token
+        }
+    ).json()
+
+    return response_handler(deleteContent_response)
 
 
 def getAccountDetails(token: str, allDetails: bool = False):

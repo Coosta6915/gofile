@@ -1,25 +1,31 @@
-# gofile
+# [gofile](https://gofile.io/)
+
+A Python wrapper for the Gofile API.
 
 ## Info
 
-A Python wrapper for the GoFile API.
+**The Gofile API and the Python wrapper are currently in their beta versions and will evolve over time. Check regularly to see if changes have been made.**
 
-**Currently in beta, expect bugs!**
+Current version works with the `2021-06-22` API.
 
-## Installation
+### Installation
 
-    $ python3 -m pip install gofile
+    python3 -m pip install gofile
 
-## Usage
+or just
 
-See [documentation](https://github.com/Codec04/gofile/wiki/) for usage examples.
+    pip install gofile
 
-## Links
+### Usage
 
-[PyPI](https://pypi.org/project/gofile/)
+See [documentation](https://github.com/Codec04/gofile/wiki/) for detailed usage examples.
 
-[GoFile](https://gofile.io/)
+```py
+import gofile
 
-[Documentation](https://github.com/Codec04/gofile/wiki/)
+server = gofile.getServer()
 
-[Bugs](https://github.com/Codec04/gofile/issues/)
+print(server)
+
+gofile.uploadFile("/home/user/documents/images.zip")
+```

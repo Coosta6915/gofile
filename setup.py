@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="gofile",
-    version="0.0.2",
+    version="0.1.0",
     py_modules=["gofile"],
     description="A Python wrapper for the GoFile API",
     long_description=open("README.md", "r").read(),
