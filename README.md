@@ -1,4 +1,4 @@
-# [gofile](https://gofile.io/)
+# [GoFile](https://gofile.io/)
 
 A Python wrapper for the Gofile API.
 
