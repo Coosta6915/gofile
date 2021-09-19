@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="gofile",
+    name="GoFile",
     version="0.1.0",
     py_modules=["gofile"],
     description="A Python wrapper for the GoFile API",
