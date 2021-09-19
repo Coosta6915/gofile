@@ -1,5 +1,10 @@
 from setuptools import setup, find_packages
 
+
+def requirements("requirements.txt": str) -> list:
+    with open(file, encoding="utf-8") as r:
+        return [i.strip() for i in r]
+
 setup(
     name="GoFile",
     version="0.1.0",
@@ -19,5 +24,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent"
     ],
-    install_requires=["requests~=2.25.1"]
+    install_requires=requirements,
+    python_requires=">=3.6"
 )
