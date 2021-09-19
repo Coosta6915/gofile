@@ -1,4 +1,7 @@
-# gofile.py
+# Made with Python3 
+# (C) Codec04
+# All rights reserved
+# Copyright permission under MIT License
 
 import requests
 
