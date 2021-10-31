@@ -1,6 +1,6 @@
 # [GoFile](https://gofile.io/)
 
-A Python wrapper for the Gofile API.
+A simple Python wrapper for the Gofile API.
 
 ## Info
 
@@ -18,7 +18,7 @@ or just
 
 ### Usage
 
-See [documentation](https://github.com/Codec04/gofile/wiki/) for detailed usage examples.
+See [documentation](https://github.com/Coosta6915/gofile/wiki/) for detailed usage examples.
 
 ```py
 import gofile

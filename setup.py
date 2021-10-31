@@ -6,18 +6,18 @@ def requirements("requirements.txt": str) -> list:
         return [i.strip() for i in r]
 
 setup(
-    name="GoFile",
-    version="0.1.0",
+    name="gofile",
+    version="0.1.2",
     py_modules=["gofile"],
-    description="A Python wrapper for the GoFile API",
+    description="A simple Python wrapper for the GoFile API",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
-    author="Codec04",
+    author="Coosta6915",
     license="MIT",
     packages=find_packages(),
     project_urls={
-        "Documentation": "https://github.com/Codec04/gofile/wiki/",
-        "GitHub": "https://github.com/Codec04/gofile/"
+        "Documentation": "https://github.com/Coosta6915/gofile/wiki/",
+        "GitHub": "https://github.com/Coosta6915/gofile/"
     },
     classifiers=[
         "Development Status :: 4 - Beta",
