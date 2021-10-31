@@ -1,4 +1,4 @@
-# [gofile](https://gofile.io/)
+# gofile
 
 A simple Python wrapper for the Gofile API.
 
@@ -8,7 +8,11 @@ A simple Python wrapper for the Gofile API.
 
 Current version works with the `2021-06-22` API.
 
-### Installation
+## Installation
+
+[gofile is available on PyPI](https://pypi.org/project/gofile/).
+
+To install run
 
     python3 -m pip install gofile
 
@@ -16,7 +20,7 @@ or just
 
     pip install gofile
 
-### Usage
+## Usage
 
 See [documentation](https://github.com/Coosta6915/gofile/wiki/) for detailed usage examples.
 
