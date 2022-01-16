@@ -10,7 +10,7 @@ Current version works with the `2021-06-22` API.
 
 ## Installation
 
-[gofile is available on PyPI](https://pypi.org/project/gofile/).
+### [gofile PyPI page](https://pypi.org/project/gofile/)
 
 To install run
 

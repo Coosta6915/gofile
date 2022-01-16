@@ -1,5 +1,3 @@
-# gofile.py
-
 import requests
 
 
