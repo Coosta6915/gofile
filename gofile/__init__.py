@@ -62,6 +62,14 @@ def uploadFile(file: str, token: str = None, folderId: str = None, description: 
     return response_handler(uploadFile_response)
 
 
+def getContent(contentId, token):
+    getContent_response = requests.get(
+        url=f"https://api.gofile.io/getContent?contentId={contentId}&token={token}"
+    )
+
+    return response_handler(getContent_response)
+
+
 def createFolder(parentFolderId, folderName, token):
     createFolder_response = requests.put(
         url="https://api.gofile.io/createFolder",
@@ -75,9 +83,9 @@ def createFolder(parentFolderId, folderName, token):
     return response_handler(createFolder_response)
 
 
-def setFolderOptions(token, folderId, option, value):
+def setFolderOption(token, folderId, option, value):
     setFolderOptions_response = requests.put(
-        url="https://api.gofile.io/setFolderOptions",
+        url="https://api.gofile.io/setFolderOption",
         data={
             "token": token,
             "folderId": folderId,
@@ -89,7 +97,21 @@ def setFolderOptions(token, folderId, option, value):
     return response_handler(setFolderOptions_response)
 
 
+def copyContent(contentsId, folderIdDest, token):
+    copyContent_reponse = requests.put(
+        url="https://api.gofile.io/copyContent",
+        data={
+            "contentsId": contentsId,
+            "folderIdDest": folderIdDest,
+            "token": token
+        }
+    ).json()
+
+    return response_handler(copyContent_reponse)
+
+
 def deleteFolder(folderId, token):  # deprecated
+    print("Deprecated, use deleteContent() instead")
     deleteFolder_response = requests.delete(
         url="https://api.gofile.io/deleteContent",
         data={
@@ -102,6 +124,7 @@ def deleteFolder(folderId, token):  # deprecated
 
 
 def deleteFile(fileId, token):  # deprecated
+    print("Deprecated, use deleteContent() instead")
     deleteFile_response = requests.delete(
         url="https://api.gofile.io/deleteContent",
         data={
