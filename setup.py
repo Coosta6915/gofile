@@ -5,7 +5,7 @@ with open("README.md", "r") as readme_file:
 
 setup(
     name="gofile",
-    version="0.1.2",
+    version="0.2.0",
     description="A simple Python wrapper for the GoFile API",
     long_description=long_description,
     long_description_content_type="text/markdown",
